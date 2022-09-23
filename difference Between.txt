@@ -1,0 +1,5 @@
+------------------Difference between call by value and call by reference--------------------------
+            Call by value	                                                            Call by reference
+1	A copy of value is passed to the function	                                An address of value is passed to the function
+2	Changes made inside the function is not reflected on other functions	    Changes made inside the function is reflected outside the function also
+3	Actual and formal arguments will be created in different memory location	Actual and formal arguments will be created in same memory location

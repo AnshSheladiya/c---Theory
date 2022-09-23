@@ -1,0 +1,13 @@
+----------------------------------------Real Life Example Of Polymorphism----------------------------------------
+Let's consider a real-life example of polymorphism. A lady behaves like a teacher in a classroom, mother or daughter in a home and customer in a market. 
+Here, a single person is behaving differently according to the situations.
+
+----------------------------------------Polymorphism----------------------------------------
+The word polymorphism means having many forms
+
+
+-------------------------types of polymorphism----------------------------------------
+Compile time polymorphism	
+Run time polymorphism
+
+----------------------------------------Compile time polymorphism----------------------------------------

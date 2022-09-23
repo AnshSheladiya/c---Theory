@@ -1,0 +1,45 @@
+Arrays are used to store multiple values in a single variable, instead of declaring separate variables for each value.
+
+---------------------------Advantages of C++ Array------------------------------------
+Code Optimization (less code)
+Random Access
+Easy to traverse data
+Easy to manipulate data
+Easy to sort data etc.
+
+-------------Disadvantages of C++ Array------------------------------------
+Fixed size
+
+------------------------------------C++ Array Types------------------------------------
+Single Dimensional Array
+Multidimensional Array
+
+------------------------------------Get the Size of an Array------------------------------------
+sizeof() operator:
+Example:
+int myNumbers[5] = {10, 20, 30, 40, 50};
+cout << sizeof(myNumbers);     //20
+because returns the size of a type in bytes.
+
+Example:for actual size
+int myNumbers[5] = {10, 20, 30, 40, 50};
+int getArrayLength = sizeof(myNumbers) / sizeof(int);
+cout << getArrayLength; //5
+
+------------------------------------Multi-Dimensional Arrays------------------------------------
+A multi-dimensional array is an array of arrays.
+also known as rectangular arrays in C++.
+followed by another set of square brackets which indicates how many elements the sub-arrays
+data is stored in tabular form (row ∗ column) which is also known as matrix.
+
+string letters[2][4];
+
+a comma-separated list inside curly braces:
+string letters[2][4] = {
+  { "A", "B", "C", "D" },
+  { "E", "F", "G", "H" }
+};
+
+
+
+

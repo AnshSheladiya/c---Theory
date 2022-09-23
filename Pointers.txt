@@ -1,0 +1,29 @@
+The pointer in C++ language is a variable
+also known as locator or indicator
+that points to an address of a value.
+
+A pointer is a variable that stores the memory address as its value.
+
+Example
+string food = "Pizza";  // A food variable of type string
+string* ptr = &food;    // A pointer variable, with the name ptr, that stores the address of food
+// Output the value of food (Pizza)
+cout << food << "\n";
+// Output the memory address of food (0x6dfed4)
+cout << &food << "\n";
+// Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+
+------------------------------------Advantage of pointer------------------------------------
+1) Pointer reduces the code and improves the performance, it is used to retrieving strings, trees etc. and used with arrays, structures and functions.
+2) We can return multiple values from function using pointer.
+3) It makes you able to access any memory location in the computer's memory.
+
+------------------------------------Get Memory Address and Value------------------------------------
+Exmple:
+string food = "Pizza";  // Variable declaration
+string* ptr = &food;    // Pointer declaration
+// Reference: Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+// Dereference: Output the value of food with the pointer (Pizza)
+cout << *ptr << "\n";

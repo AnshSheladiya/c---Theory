@@ -1,0 +1,128 @@
+C++ is an object-oriented programming language.
+C++ is  case-sensitive
+C++ is a middle-level language, as it encapsulates both high and low level language features.
+
+------------------------differences between C and C++------------------------
+                            C	                                                                        C++
+follows the procedural style programming.                       It supports both procedural and object oriented.
+Data is less secured in C.                                      you can use modifiers for class members to make it inaccessible for outside users.
+not support function overloading.	                            supports function overloading.
+you can't use functions in structure.                           you can use functions in structure.
+scanf() and printf() are mainly used for input/output.          cin and cout to perform input and output operations.
+Operator overloading is not possible in C.                      Operator overloading is possible in C++.
+C does not support the inheritance.                             C++ supports inheritance.
+C is a structural programming language,                         C++ is an object-oriented programming language 
+and it does not support classes and objects                     that supports the concept of classes and objects.
+
+
+-----------------Object-Oriented Programming (OOPs)-----------------------
+C++ supports the object-oriented programming:
+Inheritance
+Polymorphism
+Encapsulation
+Abstraction
+
+------------------------features of c++----------------------------------
+Simple
+Mid-level programming language
+Structured programming language
+Pointers
+Recursion
+Object-Oriented
+Compiler based
+Reusability
+Errors are easily detected
+Power and Flexibility
+Strongly typed language
+Modelling real-world problems
+
+-------------I/O Library Header Files---------------------------
+Header file-<iostream>:
+It is used to define the cout, cin and cerr objects, 
+which correspond to standard output stream, standard input stream and standard error stream, respectively.
+
+
+Standard output stream (cout):
+The cout is a predefined object of ostream class.
+It is connected with the standard output device, which is usually a display screen
+cout is used insertion operator (<<) to display the output on a console
+ex:  cout << "Value of ary is: " << ary << endl;  
+
+Standard input stream (cin):
+The cin is a predefined object of istream class.
+it is connected with the standard input device, which is usually a keyboard. 
+The cin is used with extraction operator (>>) to read the input from a console.
+
+---------------------------C++ Variable-------------------------------------------------
+A variable is a name of memory location. 
+It is used to store data.
+
+----------------------Rules for defining variables----------------------------
+A variable can have alphabets, digits and underscore.
+A variable name can start with alphabet and underscore only. It can't start with digit.
+No white space is allowed within variable name.
+A variable name must not be any reserved word or keyword e.g. char, float etc.
+
+----------------------------C++ data types-----------------------------
+type of data that a variable can store such as integer, floating, character etc.
+int, char, float, double
+
+-------------------C++ Expression-------------------------
+Every expression produces some value which is assigned to the variable with the help of an assignment operator.
+
+---------------------------C++ switch------------------------------------------------
+The C++ switch statement executes one statement from multiple conditions. It is like if-else-if ladder statement in C++.
+
+-----------------------------------for loop-------------------------------
+C++ for loop is used to run a part of the program several times
+ initialize variable, check condition and increment/decrement value.
+
+---------------------while loop-------------------------------------
+while loop is used to iterate a part of the program several times.
+If the number of iteration is not fixed, it is recommended to use while loop than for loop.
+
+---------------------------dowhile loop-------------------------
+do-while loop is used to iterate a part of the program several times. 
+If the number of iteration is not fixed and you must have to execute the loop at least once, it is recommended to use do-while loop.
+
+-------------------------Infinitive do-while Loop----------------
+if you pass true in the do-while loop, it will be infinitive do-while loop.
+do{    
+//code to be executed    
+}while(true);  
+
+------------------------- Break Statement--------------------------
+break is used to break loop or switch statement.
+It breaks the current flow of the program at the given condition
+
+------------------------------ Continue Statement---------------------------------------------
+The C++ continue statement is used to continue loop.
+It continues the current flow of the program and skips the remaining code at specified condition
+
+-------------------------------Goto Statement------------------------------------------
+The C++ goto statement is also known as jump statement
+It is used to transfer control to the other part of the program. 
+It unconditionally jumps to the specified label.
+
+---------------------------comments--------------------------------------
+single line comment- // (double slash)
+multi line comment:slash and asterisk (/∗ ..... ∗/)
+
+-------------------------------------- References --------------------------------------
+A reference variable is a "reference" to an existing variable
+ it is created with the & operator
+
+Example
+string food = "Pizza";
+string &meal = food;
+cout << food << "\n";  // Outputs Pizza
+cout << meal << "\n";  // Outputs Pizza
+
+--------------------------memory address-----------------------------
+string food = "Pizza";
+cout << &food; // Outputs 0x6dfed4
+
+
+
+
+

@@ -1,0 +1,105 @@
+----------------------------------------Constructor----------------------------------------
+automatically called when an object of a class is created.
+use the same name as the class
+It is used to initialize the data members of new object generally
+
+Example
+class MyClass {     // The class
+  public:           // Access specifier
+    MyClass() {     // Constructor
+      cout << "Hello World!";
+    }
+};
+int main() {
+  MyClass myObj;    // Create an object of MyClass (this will call the constructor)
+  return 0;
+}
+
+----------------------------------------Destructor----------------------------------------
+destructor works opposite to constructor; it destructs the objects of classes.
+It can be defined only once in a class. Like constructors, it is invoked automatically.
+same name as class. But it is prefixed with a tilde sign (~).
+
+Note: C++ destructor cannot have parameters. Moreover, modifiers can't be applied on destructors.
+
+----------------------------------------Parameterized Constructor----------------------------------------
+A constructor which has parameters is called parameterized constructor.
+It is used to provide different values to distinct objects.
+
+Example:
+#include <iostream>
+using namespace std;
+class Employee {
+   public:
+       int id;//data member (also instance variable)    
+       string name;//data member(also instance variable)
+       float salary;
+       Employee(int i, string n, float s)  
+        {  
+            id = i;  
+            name = n;  
+            salary = s;
+        }  
+       void display()  
+        {  
+            cout<<id<<"  "<<name<<"  "<<salary<<endl;  
+        }  
+};
+int main(void) {
+    Employee e1 =Employee(101, "Sonoo", 890000); //creating an object of Employee 
+    Employee e2=Employee(102, "Nakul", 59000); 
+    e1.display();  
+    e2.display();  
+    return 0;
+}
+
+Output:
+101  Sonoo  890000
+102  Nakul  59000
+
+
+----------------------------------------Copy Constructor----------------------------------------
+It is an overloaded constructor.
+It initializes the new object with the existing object.
+
+Syntax of copy constructor:
+Class_name(const class_name &object_name)
+{
+// body of the constructor.
+}
+
+The copy constructor is invoked when the new object is initialized with the existing object.
+The object is passed as an argument to the function.
+It returns the object.
+
+----------------------------------------Friend function----------------------------------------
+protected and private data of a class can be accessed using the function.
+By using the keyword friend compiler knows the given function is a friend function.
+
+For accessing the data, the declaration of a friend function should be done inside the body of a class starting with the keyword friend.
+
+Example:
+#include <iostream>    
+using namespace std;    
+class Box    
+{    
+    private:    
+        int length;    
+    public:    
+        Box(): length(0) { }    
+        friend int printLength(Box); //friend function    
+};    
+int printLength(Box b)    
+{    
+   b.length += 10;    
+    return b.length;    
+}    
+int main()    
+{    
+    Box b;    
+    cout<<"Length of box: "<< printLength(b)<<endl;    
+    return 0;    
+}    
+
+Output:
+Length of box: 10 
